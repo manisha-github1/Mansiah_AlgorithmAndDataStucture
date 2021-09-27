@@ -1,0 +1,36 @@
+
+
+Find the time complexity of the below functions in Θ form. Write NA if the function does not apply to any case.
+a) T (n) = 3T (n/2) + n 
+b) T (n) = 64T (n/8) − n^2(log n)  
+
+c) T (n) = 2nT (n/2) + n^n
+d) T (n) = 3T (n/3) + n/2 
+e) T(n)=7T(n/3)+n^2  
+
+-------Solution 
+
+
+a) T (n) = 3T (n/2) + n
+Ans = Θ(nlog2 3)
+----when a > b^d inthis case d= 1 then T(n) = Θ(nlog b a)
+--- Θ(n)
+	 
+b) T (n) = 64T (n/8) − n^2(log n)
+Ans NA --Since f(n) is negative
+	 
+c) T (n) = 2nT (n/2) + n^n
+Ans NA Since a is not constant
+
+d) T (n) = 3T (n/3) + n/2  
+Ans T(n) = Θ(nlogn)      ---since a=b
+
+e) T(n)=7T(n/3)+n^2  
+Ans  = Θ(n^2)           ---Since a < b^d
+
+-----
+ Master Theorem = T(n) = aT(n/b) + f(n)
+q>=1 , b>=1 and and f(n) is postive for theta notation
+The definition of theta also requires that f(n) must be non-negative for values of n greater than n0. 
+For Θ notataion 
+c1g(n)<= f(n) <= c2g(n) for n0<= n
